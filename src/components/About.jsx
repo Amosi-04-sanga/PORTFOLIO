@@ -74,7 +74,7 @@ const About = () => {
       >
         services.
       </motion.h3>
-      <div className="mt-4 flex flex-wrap gap-10 xs:justify-center">
+      <div className="mt-8 flex flex-wrap gap-10 xs:justify-center">
 
         {
           services.map((service, index) => (
