@@ -19,7 +19,7 @@ const ExperienceCard = ({ title, company_name, icon, iconBg, date, points }) => 
         />
       </div>
       <h4 className='uppercase'> {title} </h4>
-      <div className="w-[50%] text-right">
+      <div className="md:w-[50%] w-full text-right">
         <p>I worked in {company_name}</p>
         <p>On {date} </p>
       </div>
