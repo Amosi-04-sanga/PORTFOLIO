@@ -206,6 +206,8 @@ import {
   const projects = [
     {
       name: "Car Rent",
+      date: "2021 november - 2022 february",
+      icon: mongodb,
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -227,6 +229,8 @@ import {
     },
     {
       name: "Job IT",
+      date: "2022 April - 2022 july",
+      icon: reactjs,
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -248,6 +252,8 @@ import {
     },
     {
       name: "Trip Guide",
+      date: "2022 August - current",
+      icon: typescript,
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
