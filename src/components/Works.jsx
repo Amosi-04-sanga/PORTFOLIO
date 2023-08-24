@@ -17,8 +17,7 @@ const ProjectCard = ({ name, date, description, tags, image, source_code_link, i
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
         date={date}
         iconStyle={{ background: 'rgb(33, 150, 243)', color: 'blue-500' }}
-        lineColor = 'rgb(33, 150, 243)'
-        layout='2-columns'
+        lineColor='black'
         icon={
           <div className='w-full h-full flex justify-center items-center'>
             <Image
@@ -30,17 +29,18 @@ const ProjectCard = ({ name, date, description, tags, image, source_code_link, i
         }
       >
         <h3 className="vertical-timeline-element-title uppercase"> {name} </h3>
-        <div className='w-full h-full flex justify-center items-center'>
-            <Image
-              alt={name}
-              src={image}
-              className='object-contain w-full h-[30vh] block mx-auto'
-            />
-          </div>
+        
         <p>
           {description}
         </p>
-        <div className="flex justify-between mt-2">
+        <div className='flex justify-start items-center'>
+          {
+            tags.map(tag => (
+              <p key={tag.name} className={`blue-text-gradient`} > #{tag.name} </p>
+            ))
+          }
+        </div>
+        <div className="flex justify-between mt-4">
           <Link href={source_code_link} className="vertical-timeline-element-subtitle bg-blue-700 rounded-md p-1"> visit a website </Link>
           <Link href={source_code_link} className="vertical-timeline-element-subtitle bg-blue-700 rounded-md p-1"> source codes </Link>
         </div>
@@ -51,14 +51,14 @@ const ProjectCard = ({ name, date, description, tags, image, source_code_link, i
 
 const Works = () => {
   return (
-    <div className='mt-16 bg-orange-500'>
+    <div className='mt-16 text-center'>
       <motion.h3
         variants={fadeIn('up', 'spring', '.2', '1')}
-        className='uppercase font-bold text-center'
+        className='uppercase font-bold inline-block relative half-underline text-lg'
       >
         Works
       </motion.h3>
-      <div className="mt-8">
+      <div className="mt-8 bg-blue-300 py-2">
         {
           projects.map((project) => (
             < ProjectCard key={project.name} {...project} />

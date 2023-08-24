@@ -15,7 +15,7 @@ const Hero = () => {
         <Image
           alt='bgimage'
           src={herobg}
-          className='block w-full h-full'
+          className='block w-full h-full object-cover'
           priority
         />
       </div>

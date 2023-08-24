@@ -40,9 +40,9 @@ const Experience = () => {
       variants={fadeIn('', '', .1, 1)}
       className='mt-20 text-center'
     >
-      <div className="mt-0">
-        <h3 className='font-bold uppercase'>experiences</h3>
-        <p className='mt-2'>i have been in technology industry for a while and i worked
+      <div className="mt-0 text-center">
+        <h3 className='font-bold uppercase text-lg inline-block relative half-underline'>experiences</h3>
+        <p className='mt-2 text-left max-w-3xl mx-auto'>I have been in technology industry for a while and i worked
           in a different places Lorem ipsum dolor sit, amet consectetur adipisicing. some of them are as follows.
         </p>
       </div>

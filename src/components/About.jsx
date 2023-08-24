@@ -40,23 +40,18 @@ const About = () => {
     <section className='text-center'>
       <div>
         <motion.p
-          variants={fadeIn('left', 'tween', '.1', '1')}
-          className={`${styles.sectionSubText}`}
+          variants={fadeIn('up', 'tween', '.1', '1')}
+          className={`${styles.sectionSubText} font-bold text-lg inline-block relative half-underline`}
         >
-          Introduction
+          About
         </motion.p>
-        <motion.h3
-          variants={fadeIn('right', 'tween', '.1', '1')}
-          className={`${styles.sectionSubText} font-bold`}
-        >
-          overview.
-        </motion.h3>
+       
       </div>
       <div>
 
         <motion.p
           variants={fadeIn('up', 'tween', '.3', '1')}
-          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mx-auto"
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mx-auto text-left indent-2"
         >
           I am skilled web developer with experience in JavaScript and Typescript,
           and expertise in modern frameworks like react js, next js and remix js
@@ -70,11 +65,11 @@ const About = () => {
         variants={fadeIn('up', 'tween', '.8', '1')}
         className={`${styles.sectionSubText} font-bold mt-20`}
       >
-        services.
+        why hire a developer
       </motion.h3>
       <motion.p
         variants={fadeIn('up', 'tween', .8, 1)}
-        className="mt-4"
+        className="mt-4 max-w-3xl leading-[30px] mx-auto text-left indent-2"
       >
         Brand identity elements like logos, business cards, brochures, signage, van livery etc enable you to deliver your core message to your audience and helps in distinguishing your brand from your competitors.
         Everything your business displays, says, does and produces has to reflect the core ideas, values and aims of your business. In order to create the right image for your business your branding needs to be consistent, direct and stimulating for your audience.

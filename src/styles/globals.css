@@ -24,6 +24,11 @@
   );
 }
 
-.mybg {
-  background-color: rgb(42, 11, 71);
+.half-underline::before {
+  content: "";
+  width: 40%;
+  height: 3px;
+  position: absolute;
+   background-color: rgb(43, 43, 194);
 }
+

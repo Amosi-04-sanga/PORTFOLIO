@@ -1,22 +1,20 @@
 import Experience from "./Experience";
-import Feedback from "./Feeback";
 import Hero from "./Hero";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Services from "./Services";
 import Tech from "./Tech";
 import Works from "./Works";
 import About from "./About";
+import Feedback from "./Feedback";
+import Contacts from "./Contacts";
 
 
 export {
     Experience,
-    Feedback,
     Hero,
-    Footer,
     Navbar,
-    Services,
+    Contacts,
     Tech,
+    Feedback,
     Works,
     About
 }

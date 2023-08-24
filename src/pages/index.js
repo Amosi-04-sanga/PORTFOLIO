@@ -1,5 +1,5 @@
 import React from "react"
-import { About, Experience, Feedback, Hero, Services, Tech, Works } from "../components"
+import { About, Contacts, Experience, Feedback, Hero, Navbar, Tech, Works } from "../components"
 
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         < Experience />
         < Works />
         < Tech />
-        < Feedback />
+        < Contacts />
       </div>
     </>
   )
