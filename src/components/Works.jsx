@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { SectionWrapper } from "../hoc";
 
 
 const ProjectCard = ({ name, date, description, tags, image, source_code_link, icon }) => {
@@ -69,4 +70,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default SectionWrapper(Works, 'projects')

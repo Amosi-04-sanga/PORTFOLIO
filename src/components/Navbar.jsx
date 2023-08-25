@@ -12,7 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState('')
 
   return (
-    <div className={`flex justify-between items-center p-4 bg-dark text-dark h-[10vh]`}>
+    <div className={`flex justify-between items-center p-4 bg-dark text-dark h-[10vh] sticky top-0 z-50`}>
       <div>
         <Link href="/" >
           LOGO

@@ -8,20 +8,22 @@ import Image from 'next/image'
 
 const ExperienceCard = ({ title, company_name, icon, iconBg, date, points }) => {
   return (
-    <div className='w-[80vw] p-4 mx-auto'>
-      <div className={`inline-block p-[3px] mx-auto rounded-full bg-orange-500`}>
+    <div className='w-[90vw] p-4 mx-auto'>
+      
+      <h4 className='uppercase inline-block relative gradient_underline'> {title} </h4>
+      <div className="flex justify-between mt-4">
+      <div className={`flex justify-center items-center object-contain rounded-md p-[3px] bg-blue-300`}>
         <Image
-          width={40}
-          height={40}
+          width={28}
+          height={28}
           alt={title}
           src={icon}
-          className=''
         />
       </div>
-      <h4 className='uppercase'> {title} </h4>
       <div className="md:w-[50%] w-full text-right">
         <p>I worked in {company_name}</p>
         <p>On {date} </p>
+      </div>
       </div>
       <div className="mt-4 text-left">
         {
@@ -47,7 +49,7 @@ const Experience = () => {
         </p>
       </div>
       <div>
-        <div className="mt-4">
+        <div className="mt-8">
           {
             experiences.map((experience) => (
               < ExperienceCard key={experience.title} {...experience} />

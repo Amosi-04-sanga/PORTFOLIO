@@ -1,9 +1,9 @@
 import { motion } from "framer-motion"
 import React, { useState } from "react"
-import { fadeIn, textVariant } from "../utils/motion"
+import { fadeIn, slideIn, textVariant } from "../utils/motion"
 import SectionWrapper from "../hoc/sectionWrapper"
 import { styles } from "../styles"
-import { services } from "../constants";
+import { services, why_hire_dev } from "../constants";
 import Image from "next/image"
 
 
@@ -37,15 +37,15 @@ const ServiceCard = ({ title, icon, index }) => {
 
 const About = () => {
   return (
-    <section className='text-center'>
+    <section className='text-center mt-16'>
       <div>
         <motion.p
           variants={fadeIn('up', 'tween', '.1', '1')}
           className={`${styles.sectionSubText} font-bold text-lg inline-block relative half-underline`}
         >
-          About
+          About.
         </motion.p>
-       
+
       </div>
       <div>
 
@@ -62,19 +62,29 @@ const About = () => {
         </motion.p>
       </div>
       <motion.h3
-        variants={fadeIn('up', 'tween', '.8', '1')}
-        className={`${styles.sectionSubText} font-bold mt-20`}
+        variants={fadeIn('', '', '.8', '1')}
+        className={`${styles.sectionSubText} font-bold mt-20 inline-block relative gradient_underline`}
       >
-        why hire a developer
+        why hire a developer.
       </motion.h3>
-      <motion.p
-        variants={fadeIn('up', 'tween', .8, 1)}
+      <div
         className="mt-4 max-w-3xl leading-[30px] mx-auto text-left indent-2"
       >
-        Brand identity elements like logos, business cards, brochures, signage, van livery etc enable you to deliver your core message to your audience and helps in distinguishing your brand from your competitors.
-        Everything your business displays, says, does and produces has to reflect the core ideas, values and aims of your business. In order to create the right image for your business your branding needs to be consistent, direct and stimulating for your audience.
-        I can design the following for your business:
-      </motion.p>
+        {
+          why_hire_dev.map((item, index) => (
+            <motion.p
+            key={item.point}
+              variants={slideIn('up', 'tween', (index + 1) * .5 ,1)}
+              className="py-2"
+            >
+              <span className="p-1 bg-blue-300 rounded-full mr-4" > {index + 1} </span> <span className="font-bold"> {item.point}: </span>{" "} <span> {item.explanation} </span>
+            </motion.p>
+          ))
+        }
+      </div>
+      <div className="mt-16 text-center uppercase font-bold">
+        <h3>Services.</h3>
+      </div>
       <div className="mt-8 flex flex-wrap gap-10 xs:justify-center">
 
         {

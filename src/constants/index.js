@@ -47,6 +47,21 @@ import {
     },
   ];
   
+   const why_hire_dev = [
+    {
+      point: "Digital transformation",
+      explanation: "Many modern businesses have online presence, this makes sure they reach out many clients."
+    },
+    {
+      point: "connect with your clients",
+      explanation: "We can fully express your bussiness and organize your clients further, providing quick customer support"
+    },
+    {
+      point: "innovation", 
+      explanation: "as a developer we introduce new ideas and innovative solutions to address challenges and meet business goals."
+    }
+   ]
+
   const services = [
     {
       title: "Web Developer",
@@ -275,4 +290,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, why_hire_dev };
