@@ -19,7 +19,7 @@ const Hero = () => {
           priority
         />
       </div>
-      <div className="flex flex-start gap-5 absolute left-4 top-[30%] -translate-y-0.5 md:w-[40vw] xs:w-[80vw] w-[60vw]">
+      <div className="flex flex-start gap-5 absolute left-4 top-[20%] -translate-y-0.5 md:w-[40vw] xs:w-[80vw] w-[60vw]">
         <div className="flex flex-col justify-center items-center">
           <div
             className='w-[15px] h-[15px] bg-[#915eff] rounded-full'
@@ -47,7 +47,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center items-center w-full absolute bottom-8">
+      <div className="flex justify-center items-center w-full absolute bottom-20">
         <Link
           href="#about"
         >
