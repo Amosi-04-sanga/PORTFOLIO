@@ -32,7 +32,7 @@ const Hero = () => {
           variants={fadeIn('', '', 0.4, 1)}
           className={`md:text-[25px] ${styles.heroSubText}`}
         >
-          I am enthusiast full stack developer specializes in websites
+          Hello, i am <span className='text-blue-500'>AMOSI SANGA</span>, a enthusiast full stack developer specializes in websites
           and applications. I use modern technologies such as react js, next js, react native etc.
         </motion.div>
         
