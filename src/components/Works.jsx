@@ -34,17 +34,14 @@ const ProjectCard = ({ name, date, description, tags, image, source_code_link, i
         <p>
           {description}
         </p>
-        <div className='flex justify-start items-center'>
+        <div className='flex justify-center items-center'>
           {
             tags.map(tag => (
-              <p key={tag.name} className={`blue-text-gradient`} > #{tag.name} </p>
+              <p key={tag.name} className={`font-bold`} > #{tag.name} </p>
             ))
           }
         </div>
-        <div className="flex justify-between mt-4">
-          <Link href={source_code_link} className="vertical-timeline-element-subtitle bg-blue-700 rounded-md p-1"> visit a website </Link>
-          <Link href={source_code_link} className="vertical-timeline-element-subtitle bg-blue-700 rounded-md p-1"> source codes </Link>
-        </div>
+        
       </VerticalTimelineElement>
     </VerticalTimeline>
   )

@@ -47,7 +47,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center items-center w-full absolute bottom-4">
+      <div className="flex justify-center items-center w-full absolute bottom-8">
         <Link
           href="#about"
         >
